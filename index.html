@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة مسلم العطوي التقنية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --gold: #D4AF37; --black: #0a0a0a; --gray: #1a1a1a; }
+        body { background-color: var(--black); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        header { background: linear-gradient(to bottom, #1a1a1a, #0a0a0a); padding: 50px 20px; text-align: center; border-bottom: 2px solid var(--gold); }
+        .container { max-width: 900px; margin: 30px auto; padding: 20px; }
+        .post-card { background: var(--gray); border-radius: 15px; padding: 25px; margin-bottom: 25px; border-right: 5px solid var(--gold); }
+        h1, h2, h3 { color: var(--gold); }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .info-item { background: #252525; padding: 15px; border-radius: 8px; text-decoration: none; color: white; display: flex; align-items: center; transition: 0.3s; }
+        .info-item:hover { background: #333; color: var(--gold); }
+        .info-item i { margin-left: 10px; color: var(--gold); }
+        .btn-gold { display: inline-block; background: var(--gold); color: black; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 15px; }
+    </style>
+</head>
+<body>
+<header>
+    <i class="fas fa-user-circle fa-5x" style="color: var(--gold);"></i>
+    <h1>مسلم هليل العطوي</h1>
+    <p>أخصائي تقنية معلومات | محلل بيانات</p>
+</header>
+<div class="container">
+    <article class="post-card">
+        <h2><i class="fas fa-id-card"></i> تواصل معي مباشرة</h2>
+        <div class="info-grid">
+            <!-- رابط واتساب مباشر -->
+            <a href="https://wa.me/966504219939" class="info-item"><i class="fab fa-whatsapp"></i> 966504219939</a>
+            <!-- رابط إيميل مباشر -->
+            <a href="mailto:m.m.945@hotmail.com" class="info-item"><i class="fas fa-envelope"></i> m.m.945@hotmail.com</a>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i> تبوك، السعودية</div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i> معهد الآفق الجديد</div>
+        </div>
+    </article>
+    <article class="post-card">
+        <h2><i class="fas fa-file-pdf"></i> السيرة الذاتية</h2>
+        <p>عرض وتحميل سيرتي الذاتية المحدثة.</p>
+        <a href="CV_ER.pdf" target="_blank" class="btn-gold">عرض السيرة الذاتية</a>
+    </article>
+    <article class="post-card">
+        <h2><i class="fas fa-code"></i> مشاريعي الخاصة</h2>
+        <div style="margin-bottom: 20px;">
+            <h3>المسبحة الذكية</h3>
+            <a href="rosary.html" class="btn-gold">تشغيل المسبحة</a>
+        </div>
+        <div>
+            <h3>نظام الميزانية</h3>
+            <a href="budget.html" class="btn-gold">إدارة الميزانية</a>
+        </div>
+    </article>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>المسبحة الذكية - مسلم العطوي</title>
+    <style>
+        body { background-color: #0a0a0a; color: #D4AF37; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1a1a1a; padding: 40px; border-radius: 20px; border: 2px solid #D4AF37; text-align: center; box-shadow: 0 0 20px rgba(212,175,55,0.2); }
+        #counter { font-size: 6rem; margin: 20px 0; }
+        .btn-tap { width: 120px; height: 120px; border-radius: 50%; border: 3px solid #D4AF37; background: none; color: #D4AF37; cursor: pointer; font-size: 1.2rem; }
+        .back { display: block; margin-top: 20px; color: #D4AF37; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>المسبحة الذكية</h2>
+        <div id="counter">0</div>
+        <button class="btn-tap" onclick="count++ ; document.getElementById('counter').innerText=count">سبّح</button>
+        <br>
+        <a href="index.html" class="back">العودة للرئيسية</a>
+    </div>
+    <script>let count = 0;</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام الميزانية - مسلم العطوي</title>
+    <style>
+        body { background-color: #0a0a0a; color: white; font-family: sans-serif; padding: 20px; }
+        .card { max-width: 500px; margin: auto; background: #1a1a1a; padding: 25px; border-radius: 15px; border: 1px solid #D4AF37; }
+        input { width: 90%; padding: 10px; margin: 10px 0; background: #252525; border: 1px solid #444; color: white; }
+        .res { color: #D4AF37; font-size: 1.5rem; margin-top: 15px; }
+        .btn { background: #D4AF37; color: black; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 style="color:#D4AF37">حاسبة الميزانية البسيطة</h2>
+        <p>أدخل الراتب الشهري:</p>
+        <input type="number" id="salary" placeholder="مثال: 5000">
+        <p>أدخل إجمالي المصاريف:</p>
+        <input type="number" id="expenses" placeholder="مثال: 2000">
+        <button class="btn" onclick="calc()">احسب المتبقي</button>
+        <div class="res" id="result"></div>
+        <a href="index.html" style="color:#D4AF37; display:block; margin-top:20px;">العودة للرئيسية</a>
+    </div>
+    <script>
+        function calc() {
+            let s = document.getElementById('salary').value;
+            let e = document.getElementById('expenses').value;
+            document.getElementById('result').innerText = "المتبقي لك: " + (s - e) + " ريال";
+        }
+    </script>
+</body>
+</html>
